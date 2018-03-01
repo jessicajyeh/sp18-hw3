@@ -6,7 +6,9 @@ class TeachersController < ApplicationController
   def create
     # Hint: params??
 
-    # YOUR CODE HERE
+    @full_name = params[:full_name]
+    @course = params[:course_name]
+    @grade_level = params[:grade_level]
 
 
     # This line is explicitly declaring that this controller method should render/serve the

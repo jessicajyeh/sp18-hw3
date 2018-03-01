@@ -1,0 +1,14 @@
+<%= form_tag students_path do %>
+  <%= label_tag(:full_name, "Full name") %>
+  <%= text_field_tag(:full_name) %>
+
+  <%= label_tag(:food, "Favorite Food") %>
+  <%= text_field_tag(:food) %>
+
+  <%= label_tag(:age, "Age") %>
+  <%= text_field_tag(:age) %>
+
+  <!--<%= hidden_field_tag :authenticity_token, form_authenticity_token %> -->
+
+  <%= submit_tag("Create student") %>
+<% end %>
